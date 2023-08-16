@@ -1,0 +1,19 @@
+{
+    "name": "quote-generation-email-service-backend",
+    "version": "1.0.0",
+    "description": "Backend for my MK3 project-Quote Generation E-mail Service",
+    "main": "app.js",
+    "scripts": {
+        "build": "npm install",
+        "dev": "nodemon app.js"
+    },
+    "author": "Pratham Patel",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "nodemon": "^3.0.1"
+    }
+}
