@@ -8,24 +8,23 @@ const manifestForPlugin = {
         name: "QuoteHub",
         short_name: "quote-hub",
         description: "A quote generation PWA",
-        includeAssets: ['/apple-touch-icon', '/quote.ico', '/quote.png'],
         icons: [{
                 src: "/android-chrome-192x192.png",
                 sizes: "192x192",
                 type: "image/png",
-                purpose: "favicon"
+                purpose: "any maskable"
             },
             {
                 src: "/android-chrome-512x512.png",
                 sizes: "512x512",
                 type: "image/png",
-                purpose: "favicon"
+                purpose: "any maskable"
             },
             {
                 src: "/apple-touch-icon.png",
                 sizes: "180x180",
                 type: "image/png",
-                purpose: "apple touch icon"
+                purpose: "any maskable"
             },
             {
                 src: "/quote.png",
