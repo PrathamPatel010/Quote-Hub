@@ -12,42 +12,35 @@ const manifestForPlugin = {
                 src: "/android-chrome-192x192.png",
                 sizes: "192x192",
                 type: "image/png",
-                purpose: "maskable any"
             },
             {
                 src: "/android-chrome-512x512.png",
                 sizes: "512x512",
                 type: "image/png",
-                purpose: "maskable any"
             },
             {
-                src: "/apple-touch-icon.png",
+                src: "/maskable_1.png",
                 sizes: "180x180",
                 type: "image/png",
-                purpose: "maskable any"
+                purpose: "apple touch icon"
             },
             {
-                src: "/quote.png",
-                sizes: "256x256",
+                src: "/maskable_2.png",
+                sizes: "512x512",
                 type: "image/png",
-                purpose: "maskable any"
-            },
+                purpose: "any maskable"
+            }
         ],
-        theme_color: "#171717",
-        background_color: "#e8ebf2",
+        theme_color: '#f0e7db',
+        background_color: '#17181f',
         display: "standalone",
-        scope: "/",
-        start_url: "./index.html",
-        orientation: "portrait",
+        scope: '/',
+        start_url: "/",
+        orientation: 'portrait'
     },
 };
 
-// https://vitejs.dev/config/
 export default defineConfig({
+    base: "./",
     plugins: [react(), VitePWA(manifestForPlugin)],
-    build: {
-        commonjsOptions: {
-            transformMixedEsModules: true,
-        },
-    },
 })
